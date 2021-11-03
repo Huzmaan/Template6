@@ -3,7 +3,8 @@
   height: 100vh;
 }
 .MainProject-css,.MainAbout-css,.MainContact-css{
-  margin: 30px;
+  margin: auto;
+  max-width:1500px
 }
 .MainHeader-css{
   background-color: #ffff;
@@ -38,11 +39,19 @@ float: right!important;
   background-color: #ccc!important;
   color: #000000; 
 }
+.Main-css{
+  max-width: 1500px;
+  position: relative;
+  letter-spacing: 4px;
+  margin:auto;
+}
 .backgroundImage-css{
   background-image: url(./Images/architect.jpg);
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
-  height: 100vh;
+  height:800px;
+  /* object-fit: contain; */
+  
 
 }
 .MainHeadingText-css{
@@ -55,11 +64,12 @@ float: right!important;
   color: #ffffff;
 }
 .Heading-css{
-   font-size:xxx-large;
+   font-size:xx-large;
    font-weight: 400;
    position:absolute;
-   top: 55%;
-   left: 40%;
+   top: 50%;
+   left: 30%;
+   transform: translate(50%,50%);
 
 }
 .MainHeading-css{
@@ -72,20 +82,20 @@ float: right!important;
   font-size:xx-large;
   border-bottom: 1px solid #ccc;
 }
-.ImageDiv-css{
+.MainImage-css,.Main-card-css{
   display:flex; 
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding :0 8px;
+  /* padding :0 8px; */
   box-sizing: inherit;
   width: 100%
 }
 .Image-css{
-width:100%;
+width:100% !important;
  }
 .container-css{
-  padding-right: 16px;  
-padding-bottom: 16px; 
-width: 100%;
+width: 24%;
+margin-bottom: 10px;
 }
 .text-css{
   background-color:#000000;
@@ -100,8 +110,11 @@ width: 100%;
   font-weight: 500;
 }
 .Card-css{
-  width:28em;
-  padding-right: 32px;
+  width:24%;
+  margin-bottom: 15px;
+ /* padding-top: 32px; */
+  /* width:28em; */
+  /* padding-right: 32px; */
 }
 .btn-css{
   width: 100%;
@@ -118,24 +131,25 @@ width: 100%;
 .Card-description{
   /* color:#ccc; */
   opacity: 0.70;
-  font-size: 25px;
+  font-size: 20px;
 }
 .Card-paragraph{
   font-size:25px
 }
-.Main-card-css{
-  display:flex;
-}
+/* .Main-card-css{
+ 
+} */
 .ContactText-css{
   font-size:25px;
   font-weight:400
 }
 .Inp-css{
-  width:100%;
+  width:98%;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top:20px;
   font-size: 20px;
+  padding-left: 10px;
 }
 .btn-Contact{
   padding: 10px;
@@ -155,35 +169,54 @@ width: 100%;
   color: #FFFF;
   padding: 32px;
   font-size: x-large;
+  margin: 0;
 }
 .FooterLink-css{
   text-decoration: none;
   color: #ffff;
   padding: 10px;
 }
+@media only screen and (max-width:1000px){
+  .container-css{
+    width: 49%;
+  }
+  .Card-css{
+    width: 49%;
+  }
+  .body{
+    margin:10px;
+    padding:0;
+  }
+}
 @media only screen and (max-width: 600px){
   .Header-css{
     display: none;
   }
-}
-@media only screen and (max-width:1000px){
-  /* .ImageDiv-css{
-    width: 50%;
-  } */
+  .MainHeadingText2-css{
+    display: none;
+  }
   .container-css{
-    width: 50%;
+    width: 100%;
   }
-  
+  .Card-css{
+    width: 100%;
+  }
+  .body{
+    margin: 10px;
+    padding:0;
+  }
 }
+/* @media only screen and (min-width:) */
 /* @media only screen and (min-width:1000px){
-  .ImageDiv-css{
-    display: flex;
-    width: 24.9%;
-  }
-} */
-/* @media only screen and (min-width:600px){
-  .ImageDiv-css{
-    display: flex;
-    width:49.9%;
-  }
+   .ImageDiv-css{
+     display:flex;
+   }
+   .Image-css{
+     width: 100%;
+   }
+}
+@media only screen and (min-width:600px){
+   .Image-css{
+      width: 50%!important;
+  } 
 } */

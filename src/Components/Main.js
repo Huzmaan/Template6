@@ -3,7 +3,7 @@ import React from 'react'
 
 const Main = () => {
     return (
-        <div className="container-css" id="Home">
+        <div className="Main-css" id="Home">
         <div className="backgroundImage-css">
             <div className="MainHeading-css">
            <h1 className="Heading-css">

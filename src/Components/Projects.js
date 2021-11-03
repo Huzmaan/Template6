@@ -8,8 +8,8 @@ const Projects = () => {
     return (
         <div className="MainProject-css" id="Projects">
             <h3 className="ProjectsHeading-css">Projects</h3>
-            {/* <div className="MainImage-css"> */}
-                <div className="ImageDiv-css">
+            <div className="MainImage-css">
+                {/* <div className="ImageDiv-css"> */}
                     <div className="container-css">
                         <p className="text-css"> Summer House</p>
                 <img className="Image-css" src={House5} alt="House"/>
@@ -26,8 +26,8 @@ const Projects = () => {
                     <p className="text-css"> Barn House</p>
                     <img className="Image-css" src={House4} alt="House"/>
                     </div>
-                </div>
-                <div className="ImageDiv-css">
+                {/* </div> */}
+                {/* <div className="ImageDiv-css"> */}
                     <div className="container-css">
                         <p className="text-css"> Summer House</p>
                 <img className="Image-css" src={House2} alt="House"/>
@@ -46,7 +46,7 @@ const Projects = () => {
                 </div>
                 </div>
            </div>
-        // </div>
+        //  </div>
     )
 }
 

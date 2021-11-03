@@ -12,7 +12,7 @@ const About = () => {
             <div className="Card-css">
                 <img className="img-css" src={Team2} alt="Team2"/>
                <h3 className="Card-title">John Doe</h3>
-               <p className="Card-description">CEO And Founder</p>
+               <p className="Card-description">CEO & Founder</p>
                <p className="Card-paragraph">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                 <button className="btn-css">Contact</button>
             </div>
